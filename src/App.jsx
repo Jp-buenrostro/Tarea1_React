@@ -1,20 +1,21 @@
+
+export default App;
+
 import { useState } from "react";
+import "./App.css";
 import HijoA from "./components/hijoA";
 import HijoB from "./components/hijoB";
-import HijoC from "./comXWponents/hijoC";
+import HijoC from "./components/hijoC";
 
 function App() {
   const [count, setCount] = useState(0);
-
   console.log("Render App");
 
   return (
     <>
       <h1>Contador: {count}</h1>
 
-      <button onClick={() => setCount(count + 1)}>
-        Incrementar
-      </button>
+      <button onClick={() => setCount(count + 1)}>Incrementar</button>
 
       <HijoA />
       <HijoB />
@@ -23,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+
