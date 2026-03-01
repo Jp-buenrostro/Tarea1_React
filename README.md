@@ -1,16 +1,14 @@
-# React + Vite
+# Tarea 1 - Renderizado en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Team 22 
+- Joaquin Hiroki Campos  – Parte teórica 
+- Juan Pablo Buenrostro / Emilio Pardo  – Fase 2
+- Fernanda Jimenez / Estabn Muñoz – Fase 3
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# ¿Qué es el Virtual DOM?
+El Virtual DOM es una representación ligera del DOM real que React mantiene en memoria, es un objeto JavaScript que describe cómo debería verse la interfaz.
+Virtual DOM nos permite manipular el DOM real del navegador es lento y costoso. Cada vez que cambiamos algo (en este caso, agregar un elemento a la lista), el navegador tiene que recalcular estilos, posiciones y repintar la pantalla. Hacer esto por cada pequeño cambio, provocaria que la aplicación fuera lenta.
 
-## React Compiler
+# ¿Cuándo ocurre un re-render?
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
