@@ -1,11 +1,12 @@
 
-export default App;
+
 
 import { useState } from "react";
 import "./App.css";
 import HijoA from "./components/hijoA";
 import HijoB from "./components/hijoB";
 import HijoC from "./components/hijoC";
+import Lista from "./components/lista";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,8 +21,10 @@ function App() {
       <HijoA />
       <HijoB />
       <HijoC />
+      <Lista />
     </>
   );
 }
 
 
+export default App;

@@ -1,6 +1,8 @@
 import React from "react";
 
 const Elemento = ({ text, likes, onLike, onDelete }) => {
+    console.log("Elemento props:", text, likes);
+
     return (
         <div>
             <p>{text}</p>
